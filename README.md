@@ -1,3 +1,4 @@
+
 ---
 
 # 🐸Coqui.ai - Text to Speech (TTS)
@@ -10,9 +11,9 @@
 - **Integration with Fairseq Models**: You can now use over **1100 Fairseq models** for TTS.
 - **🐢 Tortoise**: TTS now supports Tortoise for faster inference. [Docs](https://tts.readthedocs.io/en/dev/models/tortoise.html).
 
-![WebUI Display](./images/tts_coqui_1)
-![WebUI Display](./images/tts_coqui_2)
-![WebUI Display](./images/tts_coqui_3)
+![WebUI Display](./images/tts_coqui_1.png)
+![WebUI Display](./images/tts_coqui_2.png)
+![WebUI Display](./images/tts_coqui_3.png)
 
 ### 🥇 TTS Performance Overview
 - High-performance models for Text-to-Speech tasks, including popular architectures like Tacotron, Glow-TTS, VITS, and more.
