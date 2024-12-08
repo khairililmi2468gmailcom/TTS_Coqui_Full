@@ -43,18 +43,27 @@ pip install -e .[all,dev,notebooks]
    cd frontend
    ```
 
-2. Start the development server:
+2. Install library in directory:
+   ```bash
+   npm install
+   ``` 
+   or if your react version not compatible use
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser to access the WebUI.
+
+3. Start the development server:
    ```bash
    npm start
    ```
    Open [http://localhost:3000](http://localhost:3000) in your browser to access the WebUI.
 
-3. Run tests:
+4. Run tests:
    ```bash
    npm test
    ```
-
-4. Build the app:
+5. Build the app:
    ```bash
    npm run build
    ```
