@@ -55,17 +55,24 @@ pip install -e .[all,dev,notebooks]
 
 3. Start the development server:
    ```bash
-   npm start
+   PORT=3002 npm start
    ```
    Open [http://localhost:3000](http://localhost:3000) in your browser to access the WebUI.
 
 4. Run tests:
    ```bash
-   npm test
+   PORT=3002 npm test
    ```
 5. Build the app:
    ```bash
    npm run build
+   ```
+6. Deploy the app with pm2:
+   ```bash
+   npm install pm2
+   ```
+   ```bash
+   pm2 start npm --name ttscoquiapp -- run start-serve
    ```
 ![WebUI Display](./images/tts_coqui_1.png)
 ![WebUI Display](./images/tts_coqui_2.png)
