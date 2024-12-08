@@ -1,5 +1,3 @@
-Here's a streamlined version of your README, highlighting key information for easier navigation and removing unnecessary details:
-
 ---
 
 # 🐸Coqui.ai - Text to Speech (TTS)
