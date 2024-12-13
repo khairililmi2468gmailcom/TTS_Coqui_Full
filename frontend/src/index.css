@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles if necessary */
+
+/* Override specific styles for modal */
+.modal {
+  @apply fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50;
+}
+
+.modal-content {
+  @apply bg-white rounded-lg p-6 w-full max-w-md space-y-4 shadow-lg;
+}
+
+/* Style for textarea */
+textarea.input-text {
+  @apply w-full h-32 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Style for select dropdowns */
+select.select-input {
+  @apply w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Style for buttons */
+button.speak-button,
+button.upload-button {
+  @apply w-full py-2 px-4 rounded-lg text-white font-bold transition-all;
+}
+
+button.speak-button {
+  @apply bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+button.upload-button {
+  @apply bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500;
+}
+
+button.close-button {
+  @apply bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500;
+}
+
+/* Style for audio player */
+audio.audio-player {
+  @apply w-full mt-4 rounded-lg;
+}
+
+/* Style for file list */
+.file-list ul {
+  @apply space-y-2;
+}
+
+.file-list li {
+  @apply flex justify-between items-center bg-gray-100 p-3 rounded-lg;
+}
+
+.file-list button.delete-button {
+  @apply py-1 px-3 bg-red-500 hover:bg-red-600 text-white rounded-lg;
+}
+
+/* General styles for title and container */
+.title {
+  @apply text-3xl font-bold text-center text-white;
+}
+
+.app-container {
+  @apply flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-500;
+}
+
