@@ -66,46 +66,55 @@ WARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
 ERROR:    Error loading ASGI app. Could not import module "app".
 WARNING:  StatReload detected changes in 'app_bark.py'. Reloading...
 ERROR:    Error loading ASGI app. Could not import module "app".
-not supported between instances of 'str' and 'int'
-INFO:     192.168.0.13:50014 - "GET /status HTTP/1.1" 500 Internal Server Error
-ERROR:    Exception in ASGI application
+WARNING:  StatReload detected changes in 'appstatic.py'. Reloading...
+Process SpawnProcess-23:
 Traceback (most recent call last):
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
-    return await self.app(scope, receive, send)
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
-    await super().__call__(scope, receive, send)
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/applications.py", line 113, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/errors.py", line 187, in __call__
-    raise exc
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/errors.py", line 165, in __call__
-    await self.app(scope, receive, _send)
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 715, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 735, in app
-    await route.handle(scope, receive, send)
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
-    await self.app(scope, receive, send)
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 76, in app
-    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 73, in app
-    response = await f(request)
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
-    raw_response = await run_endpoint_function(
-  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
-    return await dependant.call(**values)
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app.py", line 44, in <module>
+    tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/TTS/api.py", line 64, in __init__
+    self.manager = ModelManager(models_file=self.get_models_file_path(), progress_bar=progress_bar, verbose=False)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/TTS/utils/manage.py", line 56, in __init__
+    self.read_models_file(models_file)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/TTS/utils/manage.py", line 68, in read_models_file
+    self.models_dict = read_json_with_comments(file_path)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/TTS/config/__init__.py", line 21, in read_json_with_comments
+    return json.loads(input_str)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 49 column 1 (char 2777)
+t.call(**values)
   File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app.py", line 77, in get_status
     "xtts": "running" if is_process_running("xtts") else "stopped",
   File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app.py", line 87, in is_process_running

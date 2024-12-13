@@ -60,7 +60,11 @@ app = FastAPI()
 # Define allowed origins for CORS
 origins = [
     "http://localhost:3002",  # Frontend local URL
+<<<<<<< HEAD
     "http://192.168.0.26:3002",  # Frontend React local IP
+=======
+    "http://0.0.0.0:3002",  # Frontend React local IP
+>>>>>>> 2c3d9cf169fc27cd8c127ed2d6d5c28e0919d0c7
 ]
 
 # Add CORS middleware

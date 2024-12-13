@@ -2,6 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<<<<<<< HEAD
 ## Available Scripts
 
 In the project directory, you can run:
@@ -23,6 +24,8 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
+=======
+>>>>>>> 2c3d9cf169fc27cd8c127ed2d6d5c28e0919d0c7
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!

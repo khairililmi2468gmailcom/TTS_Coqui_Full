@@ -37,3 +37,11 @@ INFO:     192.168.0.13:48758 - "GET /status HTTP/1.1" 200 OK
 INFO:     192.168.0.13:48782 - "GET /speakers HTTP/1.1" 400 Bad Request
 INFO:     192.168.0.13:48766 - "GET /languages HTTP/1.1" 400 Bad Request
 INFO:     192.168.0.13:48792 - "GET /list-files HTTP/1.1" 400 Bad Request
+WARNING:  StatReload detected changes in 'appstatic.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1145100]
+INFO:     Started server process [1186130]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.

@@ -3,6 +3,10 @@ import functools
 import hashlib
 import logging
 import os
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2c3d9cf169fc27cd8c127ed2d6d5c28e0919d0c7
 import requests
 import torch
 import tqdm
@@ -91,8 +95,13 @@ def clear_cuda_cache():
 
 
 def load_model(ckpt_path, device, config, model_type="text"):
+<<<<<<< HEAD
    
     logger.info(f"loading {model_type} model from {ckpt_path}...")
+=======
+    logger.info(f"loading {model_type} model from {ckpt_path}...")
+
+>>>>>>> 2c3d9cf169fc27cd8c127ed2d6d5c28e0919d0c7
     if device == "cpu":
         logger.warning("No GPU being used. Careful, Inference might be extremely slow!")
     if model_type == "text":

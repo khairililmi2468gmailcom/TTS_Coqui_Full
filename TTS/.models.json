@@ -46,7 +46,11 @@
                     "hf_url": [
                         "https://coqui.gateway.scarf.sh/hf/bark/coarse_2.pt",
                         "https://coqui.gateway.scarf.sh/hf/bark/fine_2.pt",
+<<<<<<< HEAD
                         "https://coqui.gateway.scarf.sh/hf/bark/text_2.pt",
+=======
+                        "https://coqui.gateway.scarf.sh/hf/text_2.pt",
+>>>>>>> 2c3d9cf169fc27cd8c127ed2d6d5c28e0919d0c7
                         "https://coqui.gateway.scarf.sh/hf/bark/config.json",
                         "https://coqui.gateway.scarf.sh/hf/bark/hubert.pt",
                         "https://coqui.gateway.scarf.sh/hf/bark/tokenizer.pth"

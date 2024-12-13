@@ -10,8 +10,12 @@
     "react": "^18.3.1",
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.3.1",
+<<<<<<< HEAD
     "react-scripts": "5.0.1",
     "react-switch": "^7.0.0"
+=======
+    "react-scripts": "5.0.1"
+>>>>>>> 2c3d9cf169fc27cd8c127ed2d6d5c28e0919d0c7
   },
   "scripts": {
     "start-serve": "serve -s build -l 3002",
