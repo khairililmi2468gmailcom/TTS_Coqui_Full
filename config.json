@@ -1,0 +1,18 @@
+{
+  "model": "tts_transformer",
+  "output_path": "output/",
+  "phoneme_cache_path": "phoneme_cache/",
+  "use_phonemes": true,
+  "phoneme_language": "en-us",
+  "datasets": [
+    {
+      "name": "LJSpeech",
+      "path": "dataset/"
+    }
+  ],
+  "batch_size": 16,
+  "num_loader_workers": 4,
+  "eval_split_size": 0.1,
+  "learning_rate": 0.0001,
+  "epochs": 100
+}

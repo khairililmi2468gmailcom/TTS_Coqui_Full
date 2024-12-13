@@ -1,0 +1,316 @@
+nohup: ignoring input
+INFO:     Will watch for changes in these directories: ['/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS']
+INFO:     Uvicorn running on http://0.0.0.0:8003 (Press CTRL+C to quit)
+INFO:     Started reloader process [1118264] using StatReload
+INFO:     Started server process [1118287]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     192.168.0.13:47394 - "GET /status HTTP/1.1" 200 OK
+INFO:     192.168.0.13:47408 - "GET /status HTTP/1.1" 200 OK
+INFO:     192.168.0.13:47408 - "POST /start-xtts HTTP/1.1" 200 OK
+INFO:     192.168.0.13:47418 - "GET /status HTTP/1.1" 200 OK
+INFO:     192.168.0.13:56942 - "GET /status HTTP/1.1" 200 OK
+INFO:     192.168.0.13:35280 - "GET /status HTTP/1.1" 200 OK
+INFO:     192.168.0.13:35280 - "GET /status HTTP/1.1" 200 OK
+INFO:     192.168.0.13:35284 - "GET /status HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50010 - "GET /status HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", linWARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1116970]
+ERROR:    Error loading ASGI app. Could not import module "app".
+WARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
+ERROR:    Error loading ASGI app. Could not import module "app".
+WARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
+ERROR:    Error loading ASGI app. Could not import module "app".
+WARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
+ERROR:    Error loading ASGI app. Could not import module "app".
+WARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
+ERROR:    Error loading ASGI app. Could not import module "app".
+WARNING:  StatReload detected changes in 'app_bark.py'. Reloading...
+ERROR:    Error loading ASGI app. Could not import module "app".
+WARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
+ERROR:    Error loading ASGI app. Could not import module "app".
+WARNING:  StatReload detected changes in 'app_bark.py'. Reloading...
+ERROR:    Error loading ASGI app. Could not import module "app".
+WARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
+ERROR:    Error loading ASGI app. Could not import module "app".
+WARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
+ERROR:    Error loading ASGI app. Could not import module "app".
+WARNING:  StatReload detected changes in 'app_bark.py'. Reloading...
+ERROR:    Error loading ASGI app. Could not import module "app".
+WARNING:  StatReload detected changes in 'app_bark.py'. Reloading...
+ERROR:    Error loading ASGI app. Could not import module "app".
+WARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
+ERROR:    Error loading ASGI app. Could not import module "app".
+WARNING:  StatReload detected changes in 'app_bark.py'. Reloading...
+ERROR:    Error loading ASGI app. Could not import module "app".
+not supported between instances of 'str' and 'int'
+INFO:     192.168.0.13:50014 - "GET /status HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app.py", line 77, in get_status
+    "xtts": "running" if is_process_running("xtts") else "stopped",
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app.py", line 87, in is_process_running
+    process = psutil.Process(pid)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/psutil/__init__.py", line 319, in __init__
+    self._init(pid)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/psutil/__init__.py", line 328, in _init
+    if pid < 0:
+TypeError: '<' not supported between instances of 'str' and 'int'
+INFO:     192.168.0.13:50024 - "GET /status HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app.py", line 77, in get_status
+    "xtts": "running" if is_process_running("xtts") else "stopped",
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app.py", line 87, in is_process_running
+    process = psutil.Process(pid)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/psutil/__init__.py", line 319, in __init__
+    self._init(pid)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/psutil/__init__.py", line 328, in _init
+    if pid < 0:
+TypeError: '<' not supported between instances of 'str' and 'int'
+INFO:     192.168.0.13:50028 - "GET /status HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app.py", line 77, in get_status
+    "xtts": "running" if is_process_running("xtts") else "stopped",
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app.py", line 87, in is_process_running
+    process = psutil.Process(pid)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/psutil/__init__.py", line 319, in __init__
+    self._init(pid)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/psutil/__init__.py", line 328, in _init
+    if pid < 0:
+TypeError: '<' not supported between instances of 'str' and 'int'
+INFO:     192.168.0.13:50083 - "GET /status HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app.py", line 77, in get_status
+    "xtts": "running" if is_process_running("xtts") else "stopped",
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app.py", line 87, in is_process_running
+    process = psutil.Process(pid)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/psutil/__init__.py", line 319, in __init__
+    self._init(pid)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/psutil/__init__.py", line 328, in _init
+    if pid < 0:
+TypeError: '<' not supported between instances of 'str' and 'int'
+INFO:     192.168.0.13:50087 - "GET /status HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app.py", line 77, in get_status
+    "xtts": "running" if is_process_running("xtts") else "stopped",
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app.py", line 87, in is_process_running
+    process = psutil.Process(pid)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/psutil/__init__.py", line 319, in __init__
+    self._init(pid)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/psutil/__init__.py", line 328, in _init
+    if pid < 0:
+TypeError: '<' not supported between instances of 'str' and 'int'
+INFO:     192.168.0.13:50091 - "POST /start-bark HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50105 - "POST /start-bark HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1118287]
+INFO:     Stopping reloader process [1118264]

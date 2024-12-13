@@ -1,0 +1,337 @@
+INFO:     Will watch for changes in these directories: ['/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [1118494] using StatReload
+/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/TTS/tts/layers/xtts/xtts_manager.py:5: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.speakers = torch.load(speaker_file_path)
+/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/TTS/utils/io.py:54: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(f, map_location=map_location, **kwargs)
+GPT2InferenceModel has generative capabilities, as `prepare_inputs_for_generation` is explicitly overwritten. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+INFO:     Started server process [1118497]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ > tts_models/multilingual/multi-dataset/xtts_v2 is already downloaded.
+ > Using model: xtts
+INFO:     192.168.0.13:49812 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:49836 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     192.168.0.13:49826 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:49812 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:49846 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     192.168.0.13:49836 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50011 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50012 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50013 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50011 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50015 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50012 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50016 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50017 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50025 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50016 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50017 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50026 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50084 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50085 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50086 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50084 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50088 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50085 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50089 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50090 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50093 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     ('192.168.0.13', 50094) - "WebSocket /ws/tts" [accepted]
+INFO:     connection open
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+INFO:     ('192.168.0.13', 50100) - "WebSocket /ws/tts" [accepted]
+INFO:     connection open
+ > Text splitted to sentences.
+['Hi']
+ > Processing time: 0.8537895679473877
+ > Real-time factor: 0.42492912543427
+ > Text splitted to sentences.
+['How are you']
+ > Processing time: 0.20201468467712402
+ > Real-time factor: 0.10541517884159847
+INFO:     192.168.0.13:50102 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50104 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50103 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50113 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50112 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:50114 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     ('192.168.0.13', 50115) - "WebSocket /ws/tts" [accepted]
+INFO:     connection open
+INFO:     ('192.168.0.13', 50116) - "WebSocket /ws/tts" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+ > Text splitted to sentences.
+['你好吗？']
+ > Processing time: 0.16030216217041016
+ > Real-time factor: 0.13268253287753543
+ > Text splitted to sentences.
+['How are you']
+ > Processing time: 0.15264558792114258
+ > Real-time factor: 0.11231430905169493
+INFO:     192.168.0.13:33936 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:33940 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:33952 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     192.168.0.13:36954 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:36970 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:36974 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     192.168.0.13:36978 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:36980 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:36992 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     192.168.0.13:44722 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:44724 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:44734 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     ('192.168.0.13', 48398) - "WebSocket /ws/tts" [accepted]
+INFO:     connection open
+INFO:     ('192.168.0.13', 37708) - "WebSocket /ws/tts" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+ > Text splitted to sentences.
+['how are you brother']
+ > Processing time: 0.2075650691986084
+ > Real-time factor: 0.10574883955243335
+ > Text splitted to sentences.
+['以旁白的方式直接與觀眾溝通，並分享她內心最深處的想法，有時滔滔不絕，有時無厘頭，但總是真實呈現青少年時期的多變經驗。']
+ > Processing time: 0.9103760719299316
+ > Real-time factor: 0.09191970284478256
+INFO:     192.168.0.13:60682 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:60694 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:60702 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     192.168.0.13:60708 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:35956 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:35962 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     192.168.0.13:34250 - "GET /speakers HTTP/1.1" 200 OK
+INFO:     192.168.0.13:34266 - "GET /languages HTTP/1.1" 200 OK
+INFO:     192.168.0.13:34280 - "GET /list-files HTTP/1.1" 200 OK
+INFO:     ('192.168.0.13', 46764) - "WebSocket /ws/tts" [accepted]
+INFO:     connection open
+INFO:     connection closed
+WARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1118497]
+/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/TTS/tts/layers/xtts/xtts_manager.py:5: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.speakers = torch.load(speaker_file_path)
+/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/TTS/utils/io.py:54: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(f, map_location=map_location, **kwargs)
+GPT2InferenceModel has generative capabilities, as `prepare_inputs_for_generation` is explicitly overwritten. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+INFO:     Started server process [1125703]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1125703]
+/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/TTS/tts/layers/xtts/xtts_manager.py:5: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.speakers = torch.load(speaker_file_path)
+/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/TTS/utils/io.py:54: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(f, map_location=map_location, **kwargs)
+GPT2InferenceModel has generative capabilities, as `prepare_inputs_for_generation` is explicitly overwritten. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+Process SpawnProcess-3:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app_xtts.py", line 137, in <module>
+    async def tts_websocket(websocket: WebSocket, _: None = Depends(check_model_active)):
+NameError: name 'Depends' is not defined
+ > tts_models/multilingual/multi-dataset/xtts_v2 is already downloaded.
+ > Using model: xtts
+WARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
+/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/TTS/tts/layers/xtts/xtts_manager.py:5: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.speakers = torch.load(speaker_file_path)
+/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/TTS/utils/io.py:54: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(f, map_location=map_location, **kwargs)
+GPT2InferenceModel has generative capabilities, as `prepare_inputs_for_generation` is explicitly overwritten. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+Process SpawnProcess-4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app_xtts.py", line 137, in <module>
+    async def tts_websocket(websocket: WebSocket, _: None = Depends(check_model_active)):
+NameError: name 'Depends' is not defined
+ > tts_models/multilingual/multi-dataset/xtts_v2 is already downloaded.
+ > Using model: xtts
+WARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
+/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/TTS/tts/layers/xtts/xtts_manager.py:5: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.speakers = torch.load(speaker_file_path)
+/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/TTS/utils/io.py:54: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(f, map_location=map_location, **kwargs)
+GPT2InferenceModel has generative capabilities, as `prepare_inputs_for_generation` is explicitly overwritten. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+Process SpawnProcess-5:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app_xtts.py", line 137, in <module>
+    async def tts_websocket(websocket: WebSocket, _: None = Depends(check_model_active)):
+NameError: name 'Depends' is not defined
+ > tts_models/multilingual/multi-dataset/xtts_v2 is already downloaded.
+ > Using model: xtts
+WARNING:  StatReload detected changes in 'app_xtts.py'. Reloading...
+Process SpawnProcess-6:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app_xtts.py", line 135, in <module>
+    async def tts_websocket(websocket: WebSocket, _: None = Depends(check_model_active)):
+NameError: name 'Depends' is not defined
+WARNING:  StatReload detected changes in 'app_bark.py'. Reloading...
+Process SpawnProcess-7:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/nas-data/alim_workspace/TTS_Test_Tool/envtts/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/nas-data/alim_workspace/TTS_Test_Tool/CoquiTTS/app_xtts.py", line 135, in <module>
+    async def tts_websocket(websocket: WebSocket, _: None = Depends(check_model_active)):
+NameError: name 'Depends' is not defined
+INFO:     Stopping reloader process [1118494]

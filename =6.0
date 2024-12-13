@@ -1,0 +1,4 @@
+Collecting pyyaml
+  Using cached PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (751 kB)
+Installing collected packages: pyyaml
+Successfully installed pyyaml-6.0.2
