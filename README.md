@@ -508,7 +508,15 @@ $ tts --out_path output/path/speech.wav --model_name "<language>/<dataset>/<mode
 ```bash
 $ tts --text "Text for TTS" --out_path output/path/speech.wav
 ```
-
+#### If Running app xtts and app bark api for front end
+```bash
+nohup uvicorn app_xtts:app --reload --host 0.0.0.0 --port 8000 > app_xtts.log 2>&1 &
+nohup uvicorn app_bark:app --reload --host 0.0.0.0 --port 8001> app_bark.log 2>&1 &
+```
+### Front end
+```bash
+pm2 start npm --name ttscoquiapp -- run start-serve
+```
 For more options, such as voice cloning, multi-speaker models, and advanced settings, check the command-line documentation.
 
 ---
